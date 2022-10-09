@@ -59,13 +59,11 @@
       <span>Then we can do anything!</span>
     </b>
     
-    <span>
-      <p><input type="checkbox" /> Discuss the new features of the application</p>
-      <p><input type="checkbox" /> Discuss the newer features of the application</p>
-      <p><input type="checkbox" /> Discuss the newest features of the application</p>
-      <p><input type="checkbox" /> Discuss the good features of the application</p>
-      <p><input type="checkbox" /> Discuss the updated features of the application</p>
-    </span>
+    <p><input type="checkbox" /> Discuss the new features of the application</p>
+    <p><input type="checkbox" /> Discuss the newer features of the application</p>
+    <p><input type="checkbox" /> Discuss the newest features of the application</p>
+    <p><input type="checkbox" /> Discuss the good features of the application</p>
+    <p><input type="checkbox" /> Discuss the updated features of the application</p>
 
   <br>
 
@@ -132,7 +130,7 @@
     <h4>Audio to relax before you code.</h4>
     <audio 
       controls
-      src="assets/Sample Beat.mp3"> 
+      src="assets/Sample_Beat.mp3"> 
       Your browser does not support the audio tag.
     </audio> 
 
@@ -150,31 +148,31 @@
 
   <p>Hello, fill this form out to be notified before the next meeting!</p>
   
-  <form action="">
+  <form>
     <label for="name">Name:</label>
-    <input type="text" name="name" placeholder="John Doe">
+    <input type="text" id="name" name="name" placeholder="John Doe">
 
     <br><br>
 
     <label for="email">Email:</label>
-    <input type="email" name="email" placeholder="abcd@gmail.com">
+    <input type="email" id="email" name="email" placeholder="abcd@gmail.com">
 
     <br><br>
 
     <label for="birthday">Birthday:</label>
-    <input type="date" name="birthday" placeholder="MM/DD/YYYY">
+    <input type="date" id="birthday" name="birthday">
 
     <br><br>
     <fieldset>
       <legend>Food Preference for Next Meeting:</legend>
 
-      <input type="radio" name="vegan">
+      <input type="radio" name="vegan" id="vegan">
       <label for="vegan">Vegan</label>
 
-      <input type="radio" name="veg">
+      <input type="radio" name="veg" id="veg">
       <label for="veg">Vegetarian</label>
 
-      <input type="radio" name="non_veg">
+      <input type="radio" name="non_veg" id="non_veg">
       <label for="non_veg">Non Vegetarian</label>
 
     </fieldset>
@@ -210,14 +208,14 @@
       <textarea name="comments" id="comments" cols="60" rows="3"></textarea>
     </div>
 
-    <br><br>
+    <br>
 
     <input type="checkbox" id="good" name="good">
     <label for="good">Check this if you are caught up?</label>
 
     <br>
-    <input type="checkbox" id="good" name="good">
-    <label for="good">Check this if this meeting was helpful?</label>
+    <input type="checkbox" id="goods" name="goods">
+    <label for="goods">Check this if this meeting was helpful?</label>
 
     <br><br>
 
