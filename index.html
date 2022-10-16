@@ -2,74 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="assets/sample_flappybird.png">
-  <link rel="stylesheet" href="assets/style.css">
   <title>Meeting Notes</title>
+  <link rel="icon" href="assets/sample_flappybird.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body style="background-color: rgb(229, 227, 227);">
   <!-- Header -->
   <header>
     <section>
       <h1>Meeting Notes - First Brainstorm</h1>
 
       <div> 
-        <h2>10/6/2022</h2> 
+        <h2>HardCore 34 Meetup - 10/12/2022</h2> 
       </div>
     </section>
-
-    <hr>
-    
-    <h3>Table of Contents</h3>
-    <nav>
-      <ol>
-        <li><a href="#attendees"> Attendees</a></li>
-        <li><a href="#agenda"> Agenda</a></li>
-        <li><a href="#next_meeting"> Next Meeting</a></li>
-        <li><a href="#faqs_questions"> Questions/FAQs</a></li>
-        <li><a href="#diagrams"> Diagrams</a></li>
-        <li><a href="#resources"> Resources</a></li>
-        <li><a href="#form"> Form</a></li>
-      </ol>
-    </nav>
   </header>
 
   <hr>
 
   <!-- Main -->
   <main>
-  <h3 id="#attendees"> Attendees</h3>
+  <h3 id="attendees"> Attendees</h3>
 
-  <ul>
-    <li><input type="checkbox" /> John Doe</li>
-    <li><input type="checkbox" /> Jane Doe</li>
-    <li><input type="checkbox" /> Wade Doe</li>
-    <li><input type="checkbox" /> Nick Doe</li>
-    <li><input type="checkbox" /> Bob Doe</li>
+  <p> Check off everyone who attended. </p>
+
+  <ul style="color: #6B21B0; font-size: 16px;">
+    <li><input type="checkbox" checked="checked"/> Jack</li>
+    <li><input type="checkbox" checked="checked"/> David</li>
+    <li><input type="checkbox" checked="checked"/> Alessia</li>
+    <li><input type="checkbox" checked="checked"/> Jiaxin</li>
+    <li><input type="checkbox" checked="checked"/> Derrick</li>
+    <li><input type="checkbox" checked="checked"/> Yash</li>
+    <li><input type="checkbox" checked="checked"/> Raphael</li>
+    <li><input type="checkbox" checked="checked"/> Sisy</li>
+    <li><input type="checkbox" checked="checked"/> Spencer</li>
+    <li><input type="checkbox" checked="checked"/> Xu</li>
   </ul>
 
   <br>
-  <h3 id="#agenda"> Agenda</h3>
+  <h3 id="agenda"> Agenda</h3>
 
-    <b>
+  <p> First, a few lines of inspiration:</p>
+
+    <b style="color: #fff; 
+    background-color: rgba(107, 33, 176, 0.75); 
+    padding: 10px; line-height: 2.5; margin-top: -20px;">
       <span>We can do this!</span>
       <span>There is no need to worry!</span>
       <span>When we have our team!</span>
       <span>Then we can do anything!</span>
     </b>
+
+    <br><br>
+
+    <p> Check off the agenda items that were discussed. </p>
     
-    <p><input type="checkbox" /> Discuss the new features of the application</p>
-    <p><input type="checkbox" /> Discuss the newer features of the application</p>
-    <p><input type="checkbox" /> Discuss the newest features of the application</p>
-    <p><input type="checkbox" /> Discuss the good features of the application</p>
-    <p><input type="checkbox" /> Discuss the updated features of the application</p>
+    <p><input type="checkbox" /> Discuss potential ideas</p>
+    <p><input type="checkbox" /> Come up with team branding and name</p>
+    <p><input type="checkbox" /> Distribute tasks equally and begin work</p>
+    <p><input type="checkbox" /> Figure out roles, rules, and expectations</p>
+    <p><input type="checkbox" /> Win, win, win, no matter what!</p>
 
   <br>
 
-  <h3 id="#next_meeting"> Next Meeting</h3>
-  <div>
+  <h3 id="next_meeting"> Next Meeting</h3>
+  <div class="next_meeting">
     <strong>We need to plan first, </strong>
     <i>then execute. </i>
 
@@ -85,11 +83,11 @@
   </div>
 
   <br>
-  <h3 id="#faqs_questions"> Questions/FAQs</h3>
+  <h3 id="faqs_questions"> Questions/FAQs</h3>
   
   <details>
     <summary>What are our goals for the upcoming week?</summary>
-    <p>We need to create a layout for rest of the week. We should make a 
+    <p class="summary_p">We need to create a layout for rest of the week. We should make a 
       reasonable, but not too ambitious, goal for the week. We should also
       make sure to not get caught up in the features, but focus on the
       customers' needs.
@@ -100,7 +98,7 @@
 
   <details>
     <summary>Who is our target audience?</summary>
-    <p>We have to keep in mind that our primary customer is a user
+    <p class="summary_p">We have to keep in mind that our primary customer is a user
       who is proactive and wants to be involved in the development
       of society. 
     </p>
@@ -110,7 +108,7 @@
 
   <details>
     <summary>What improvements/updates can we make to the application?</summary>
-    <p>We can refer to the feedback we recieved from our user to get potential
+    <p class="summary_p">We can refer to the feedback we recieved from our user to get potential
       ideas of what we can improve on. We can also refer to our most popular
       features to see what updates can be made to them.
     </p>
@@ -118,15 +116,19 @@
 
 
   <br>
-  <h3 id="#diagrams"> Diagrams</h3>
+  <h3 id="diagrams"> Diagrams</h3>
 
   <p>This is what our future looks like.</p>
-  <img src="assets/Coding.jpg" alt="Coding Image" width="500" height="250">
-  <img src="assets/Coding2.jpg" alt="Coding Image 2" width="250" height="250">
-  <img src="assets/Coding3.jpg" alt="Coding Image 3" width="250" height="250">
+
+  <div class="image_div">
+    <img src="assets/Coding.jpg" alt="Coding Image" width="500" height="250">
+    <img src="assets/Coding2.jpg" alt="Coding Image 2" width="250" height="250">
+    <img src="assets/Coding3.jpg" alt="Coding Image 3" width="250" height="250">
+  </div>
+  
 
   <br>
-  <h3 id="#resources"> Resources</h3>
+  <h3 id="resources"> Resources</h3>
 
     <h4>Audio to relax before you code.</h4>
     <audio 
@@ -144,85 +146,93 @@
       Your browser does not support the video tag.
     </video>
 
+  <hr>
   <br>
-  <h3 id="#form"> Form</h3>
 
+  <h3 id="form"> Form</h3>
   <p>Hello, fill this form out to be notified before the next meeting!</p>
+
+  <div class="form_div">
+    
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="John Doe">
+
+      <br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="abcd@gmail.com">
+
+      <br><br>
+
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday">
+
+      <br><br>
+      <fieldset>
+        <legend>Food Preference for Next Meeting:</legend>
+
+        <input type="radio" name="food" id="vegan">
+        <label for="vegan">Vegan</label>
+
+        <input type="radio" name="food" id="veg">
+        <label for="veg">Vegetarian</label>
+
+        <input type="radio" name="food" id="non_veg">
+        <label for="non_veg">Non Vegetarian</label>
+
+      </fieldset>
+      <br>
+
+      <label for="lang">Choose preffered coding language:</label>
+      <input list="langs" name="lang" id="lang">
+
+      <datalist id="langs">
+        <option value="Python">
+        <option value="JavaScript">
+        <option value="C++">
+        <option value="Java">
+        <option value="C#">
+        <option value="Ruby">
+      </datalist>
+
+      <br><br>
+
+      <label for="ide">Choose preffered IDE:</label>
+      <select name="ide" id="ide">
+        <option value="vscode">VSCode</option>
+        <option value="pycharm">PyCharm</option>
+        <option value="atom">Atom</option>
+        <option value="sublime">Sublime</option>
+        <option value="eclipse">Eclipse</option>
+      </select>
+
+      <br><br>
+
+      <div>
+        <label for="comments">Other Comments:</label>
+        <textarea name="comments" id="comments" cols="60" rows="3"></textarea>
+      </div>
+
+      <br>
+
+      <input type="checkbox" id="good" name="good">
+      <label for="good">Check this if you are caught up?</label>
+
+      <br>
+      <input type="checkbox" id="goods" name="goods">
+      <label for="goods">Check this if this meeting was helpful?</label>
+
+      <br><br>
+
+      <!-- make button centered -->
+      <div>
+        <button class="button" type="submit">Submit</button>
+      </div>
+
+    </form>
+  </div>
   
-  <form>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" placeholder="John Doe">
-
-    <br><br>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" placeholder="abcd@gmail.com">
-
-    <br><br>
-
-    <label for="birthday">Birthday:</label>
-    <input type="date" id="birthday" name="birthday">
-
-    <br><br>
-    <fieldset>
-      <legend>Food Preference for Next Meeting:</legend>
-
-      <input type="radio" name="vegan" id="vegan">
-      <label for="vegan">Vegan</label>
-
-      <input type="radio" name="veg" id="veg">
-      <label for="veg">Vegetarian</label>
-
-      <input type="radio" name="non_veg" id="non_veg">
-      <label for="non_veg">Non Vegetarian</label>
-
-    </fieldset>
-    <br>
-
-    <label for="lang">Choose preffered coding language:</label>
-    <input list="langs" name="lang" id="lang">
-
-    <datalist id="langs">
-      <option value="Python">
-      <option value="JavaScript">
-      <option value="C++">
-      <option value="Java">
-      <option value="C#">
-      <option value="Ruby">
-    </datalist>
-
-    <br><br>
-
-    <label for="ide">Choose preffered IDE:</label>
-    <select name="ide" id="ide">
-      <option value="vscode">VSCode</option>
-      <option value="pycharm">PyCharm</option>
-      <option value="atom">Atom</option>
-      <option value="sublime">Sublime</option>
-      <option value="eclipse">Eclipse</option>
-    </select>
-
-    <br><br>
-
-    <div>
-      <label for="comments">Other Comments:</label>
-      <textarea name="comments" id="comments" cols="60" rows="3"></textarea>
-    </div>
-
-    <br>
-
-    <input type="checkbox" id="good" name="good">
-    <label for="good">Check this if you are caught up?</label>
-
-    <br>
-    <input type="checkbox" id="goods" name="goods">
-    <label for="goods">Check this if this meeting was helpful?</label>
-
-    <br><br>
-
-    <button type="submit">Submit</button>
-
-  </form>
   
   </main>
 
@@ -230,7 +240,25 @@
 
   <!-- Footer -->
   <footer>
-    <p>© 2022 James Doe</p>
+    <div style="margin: 20px; display: flex; justify-content: space-between">
+      <p>© Yash Patki</p>
+      <p>October 2022</p>
+    </div>
+      
+    <hr>
+
+    <h3 class="centered_h3">Links in Page</h3>
+    <nav>
+      <ol>
+        <li><a href="#attendees"> Attendees</a></li>
+        <li><a href="#agenda"> Agenda</a></li>
+        <li><a href="#next_meeting"> Next Meeting</a></li>
+        <li><a href="#faqs_questions"> Questions/FAQs</a></li>
+        <li><a href="#diagrams"> Diagrams</a></li>
+        <li><a href="#resources"> Resources</a></li>
+        <li><a href="#form"> Form</a></li>
+      </ol>
+    </nav>
   </footer>
 
   </body>

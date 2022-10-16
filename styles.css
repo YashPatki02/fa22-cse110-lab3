@@ -1,0 +1,139 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #350066;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    font-style: italic;
+    line-height: 1;
+    color: rgb(138, 43, 226);
+    text-align: center;
+    margin-top: -20px;
+}
+
+.centered_h3 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    color: #AF71E8;
+    text-align: center;
+    padding: 10px;
+    margin: (10px, 0px, 10px, 0px);
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    color: #AF71E8;
+    padding: 10px;
+    margin: (10px, 0px, 10px, 0px);
+}
+
+hr {
+    border: 0.2px solid hsla(272, 68%, 23%, 0.2);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p, h4 {
+    font-size: 16px;
+    color: #6B21B0;
+    text-align: left;
+    padding: 10px;
+}
+
+.next_meeting {
+    font-size: 16px;
+    color: #6B21B0;
+    line-height: 2.5;
+    text-align: left;
+    padding: 10px;
+    margin-left: 2%;
+}
+
+details {
+    font-size: 16px;
+    color: #6B21B0;
+    line-height: 2.5;
+    text-align: left;
+    margin-left: 3%;
+}
+
+.summary_p {
+    font-size: 16px;
+    color: #6B21B0;
+    line-height: 1.5;
+    text-align: left;
+    margin-left: 2%;
+    margin-right: 10%;
+}
+
+.image_div {
+    background-color: hsla(271, 72%, 68%, 0.5);
+    padding: 20px;
+    margin-left: -100px;
+    margin-right: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+audio {
+    margin-left: 2%;
+    /* stretch audio across the screen */
+    width: 60%;
+}
+
+video {
+    margin-left: 2%;
+    /* mae video 50% of the screen */
+    width: 60%;
+    height: 60%;
+    margin-bottom: 50px;
+}
+
+.form_div {
+    margin-left: 4%;
+    color: #6B21B0;
+    padding: 50px;
+    background-color: hsla(271, 72%, 68%, 0.25);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #350066;
+    border-width: 1px;
+    margin-bottom: 20px;
+}
+
+
+
+.button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #AF71E8;
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    border-color: #350066;
+    border-width: 2px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+a {
+    color: #350066;
+    text-decoration: none;
+    line-height: 1.25;
+    margin-left: 5%;    
+}
+
