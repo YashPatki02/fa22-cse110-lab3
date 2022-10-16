@@ -5,6 +5,12 @@
   <title>Meeting Notes</title>
   <link rel="icon" href="assets/sample_flappybird.png">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    br {
+      display: block;
+      margin: 3em;
+    }
+  </style>
 </head>
 
 <body style="background-color: rgb(229, 227, 227);">
@@ -15,6 +21,7 @@
 
       <div> 
         <h2>HardCore 34 Meetup - 10/12/2022</h2> 
+        <h2 class="lang_h2">Yash's Version!</h2>
       </div>
     </section>
   </header>
@@ -58,11 +65,14 @@
 
     <p> Check off the agenda items that were discussed. </p>
     
-    <p><input type="checkbox" /> Discuss potential ideas</p>
-    <p><input type="checkbox" /> Come up with team branding and name</p>
-    <p><input type="checkbox" /> Distribute tasks equally and begin work</p>
-    <p><input type="checkbox" /> Figure out roles, rules, and expectations</p>
-    <p><input type="checkbox" /> Win, win, win, no matter what!</p>
+    <div>
+      <p><input type="checkbox" /> Discuss potential ideas</p>
+      <p><input type="checkbox" /> Come up with team branding and name</p>
+      <p><input type="checkbox" /> Distribute tasks equally and begin work</p>
+      <p><input type="checkbox" /> Figure out roles, rules, and expectations</p>
+      <p><input type="checkbox" /> Win, win, win, no matter what!</p>
+    </div>
+    
 
   <br>
 
@@ -87,7 +97,7 @@
   
   <details>
     <summary>What are our goals for the upcoming week?</summary>
-    <p class="summary_p">We need to create a layout for rest of the week. We should make a 
+    <p>We need to create a layout for rest of the week. We should make a 
       reasonable, but not too ambitious, goal for the week. We should also
       make sure to not get caught up in the features, but focus on the
       customers' needs.
@@ -98,7 +108,7 @@
 
   <details>
     <summary>Who is our target audience?</summary>
-    <p class="summary_p">We have to keep in mind that our primary customer is a user
+    <p>We have to keep in mind that our primary customer is a user
       who is proactive and wants to be involved in the development
       of society. 
     </p>
@@ -108,7 +118,7 @@
 
   <details>
     <summary>What improvements/updates can we make to the application?</summary>
-    <p class="summary_p">We can refer to the feedback we recieved from our user to get potential
+    <p>We can refer to the feedback we recieved from our user to get potential
       ideas of what we can improve on. We can also refer to our most popular
       features to see what updates can be made to them.
     </p>
@@ -129,8 +139,8 @@
 
   <br>
   <h3 id="resources"> Resources</h3>
-
-    <h4>Audio to relax before you code.</h4>
+    <div>
+      <h4>Audio to relax before you code.</h4>
     <audio 
       controls
       src="assets/Sample_Beat.mp3"> 
@@ -145,6 +155,8 @@
       height="240"> 
       Your browser does not support the video tag.
     </video>
+    </div>
+    
 
   <hr>
   <br>
@@ -227,7 +239,9 @@
 
       <!-- make button centered -->
       <div>
-        <button class="button" type="submit">Submit</button>
+        <button id="button" type="submit">Submit</button>
+      
+        <button id="button" type="reset">Reset</button>
       </div>
 
     </form>
@@ -249,7 +263,7 @@
 
     <h3 class="centered_h3">Links in Page</h3>
     <nav>
-      <ol>
+      <ol  style="display: flex; justify-content: space-between; flex-wrap: wrap; flex-direction: column; align-items: center;">
         <li><a href="#attendees"> Attendees</a></li>
         <li><a href="#agenda"> Agenda</a></li>
         <li><a href="#next_meeting"> Next Meeting</a></li>

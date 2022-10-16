@@ -4,6 +4,10 @@ body {
     margin-left: 50px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 h1 {
     font-size: 40px;
     font-weight: bold;
@@ -20,14 +24,28 @@ h2 {
     margin-top: -20px;
 }
 
+/* Use NotoSansJP Font from Local File in assets */
+@font-face {
+    font-family: 'NotoSansJP';
+    src: url('assets/NotoSansJP-Regular.otf');
+}
+
+/* Use NotoSansJp in .lang_h2 */
+h2.lang_h2 {
+    font-family: 'NotoSansJP';
+}
+
 .centered_h3 {
+    margin: auto;
     font-size: 24px;
     font-weight: bold;
     line-height: 1;
     color: #AF71E8;
     text-align: center;
-    padding: 10px;
-    margin: (10px, 0px, 10px, 0px);
+    padding-top: 45px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 h3 {
@@ -59,28 +77,40 @@ p, h4 {
     text-align: left;
     padding: 10px;
     margin-left: 2%;
+    /* Use display grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-content: space-between;
+}
+
+div p {
+    background-color: hsla(271, 72%, 68%, 0.3);
+    border-radius: 5px;
 }
 
 details {
-    font-size: 16px;
+    font-size: 1pc;
     color: #6B21B0;
     line-height: 2.5;
     text-align: left;
     margin-left: 3%;
 }
 
-.summary_p {
-    font-size: 16px;
+
+details > p {
+    font-size: 12pt;
     color: #6B21B0;
     line-height: 1.5;
     text-align: left;
     margin-left: 2%;
     margin-right: 10%;
+    background-color: hsla(271, 72%, 68%, 0.15);
 }
 
 .image_div {
     background-color: hsla(271, 72%, 68%, 0.5);
-    padding: 20px;
+    padding: 20px 5px 10px 5px;
     margin-left: -100px;
     margin-right: -100px;
     display: flex;
@@ -90,13 +120,15 @@ details {
 }
 
 audio {
-    margin-left: 2%;
+    margin-left: 5em;
     /* stretch audio across the screen */
     width: 60%;
+    max-width: 1000px;
+    max-height: 100px;
 }
 
 video {
-    margin-left: 2%;
+    margin-left: 5rem;
     /* mae video 50% of the screen */
     width: 60%;
     height: 60%;
@@ -113,11 +145,23 @@ video {
     border-color: #350066;
     border-width: 1px;
     margin-bottom: 20px;
+    position: relative;
+    display: grid;
+    align-content: stretch;
 }
 
+/* Use Adjacent Sibling combinator */
+.form_div + .form_div {
+    margin-top: 20px;
+}
 
+/* Use General Sibling combinator */
+b + span {
+    color: black;
+}
 
-.button {
+/* Id Selector */
+#button {
     margin-top: 20px;
     margin-bottom: 20px;
     color: white;
@@ -128,12 +172,33 @@ video {
     border-width: 2px;
     font-size: 16px;
     font-weight: bold;
+    position: static;
 }
 
-a {
+/* Button Hover Color */
+#button:hover {
+    background-color: #350066;
+    color: white;
+}
+
+/* Change Link Color when Clicked */
+a:active {
+    color: #AF71E8;
+}
+
+/* Add Media Query to Change from Row to Column */
+@media screen and (max-width: 600px) {
+    .image_div {
+        flex-direction: column;
+    }
+}
+
+a[href^="https://"] {
     color: #350066;
-    text-decoration: none;
+    text-decoration: aquamarine;
     line-height: 1.25;
-    margin-left: 5%;    
+    margin-left: 5lh;
+    margin-right: 5lh; 
+    display: inline-block;  
 }
 
